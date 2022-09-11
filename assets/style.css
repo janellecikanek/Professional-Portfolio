@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: rgb(232, 236, 228);
+}
+
+/* Navigation Bar*/
+nav {
+    display: flex;
+    background-color: rgb(34, 50, 36);
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name {
+
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(50, 63, 94);
+    background-color: rgb(84, 199, 124);
+    font-size: 60px;
+    min-width: 600px;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+img {
+    width: 15%;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+
+a {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(84, 199, 124);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+    min-width: 50px;
+}
+
+
+/* Page links - WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section*/
+
+a:hover {
+    color: rgb(228, 18, 189);
+    border: 1px, 0, 0, 0 solid rgb(61, 47, 60);
+    background-color: rgb(226, 237, 176);
+
+}
+
+header {
+    display: flex;
+    background-image: url("../images/tulips.jpeg");
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 50%;
+    width: 100%;
+    height: 200px;
+
+}
+
+#title {
+
+    color: rgb(4, 3, 26);
+    font-size: 50px;
+
+
+}
+h2 {
+    color:aliceblue;
+    opacity: 99%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(50, 63, 94);
+    font-size: 45px;
+    border-right: solid;
+    flex-basis: 40%;
+    align-items: space-between;
+}
+
+/*WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerAboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#aboutMeAside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    border-right: solid;
+}
+
+.aboutMeContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+    justify-items: flex-end;
+    padding-left: 15px;
+}
+
+
+.containerWork {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#WorkAside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    border-right: solid;
+
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(50, 63, 94);
+    font-size: 45px;
+    border-right: solid;
+    flex-basis: 20%;
+    align-items: space-between;
+}
+
+/* Work Boxes */
+
+#finalproject {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px;
+    border-style: solid;
+    color: rgb(84, 199, 124);
+    border-width: 10px;
+    background-image: url("../images/Tulipssmall.jpg");
+    float: right;
+    width: 65%;
+}
+
+#finalproject:hover {
+    box-shadow: 5px 10px rgb(228, 18, 189)
+}
+
+span {
+    font-size: 75%
+}
+
+#prework {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 50px;
+    margin: 20px;
+    border-style: solid;
+    color: rgb(84, 199, 124);
+    border-width: 10px;
+    background-image: url("../images/prework.png");
+    flex-direction: column;
+    float: left;
+}
+
+#prework:hover {
+    box-shadow: 5px 10px rgb(228, 18, 189)
+}
+
+#restarter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 50px;
+    margin: 20px;
+    border-style: solid;
+    color: rgb(84, 199, 124);
+    border-width: 10px;
+    background-image: url("../images/horiseon.png");
+    background-image: 100%;
+    flex-direction: column;
+    float: right;
+}
+#restarter:hover {
+    box-shadow: 5px 10px rgb(228, 18, 189)
+}
+
+#puzzels {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 50px;
+    margin: 20px;
+    border-style: solid;
+    color: rgb(84, 199, 124);
+    border-width: 10px;
+    background-image: url("../images/tulips.jpeg");
+    flex-direction: column;
+    float: left;
+}
+#puzzels:hover {
+    box-shadow: 5px 10px rgb(228, 18, 189)
+}
+
+#runbuddy {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    padding: 50px;
+    margin: 20px;
+    border-style: solid;
+    color: rgb(84, 199, 124);
+    border-width: 10px;
+    background-image: url("../images/tulips.jpeg");
+    flex-direction: column;
+    float: right;
+}
+#runbuddy:hover {
+    box-shadow: 5px 10px rgb(228, 18, 189)
+}
+
+/* Contact Information */
+footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(84, 199, 124);
+    font-size: 25px;
+    padding: 20px;
+}
+
+.containerContactMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#contactMeAside {
+    flex-basis: 20%;
+}
+
+#contactMeContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    justify-content: flex-end;
+    color: rgb(84, 199, 124);
+    font-size: 25px;
+    align-items: center;
+}
+
+/* WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport */
+@media screen and (max-width: 768px) {
+    nav {
+      background-color: #86d4e0;
+    }
+}
+
